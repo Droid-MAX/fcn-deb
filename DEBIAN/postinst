@@ -1,0 +1,6 @@
+#!/bin/bash
+systemctl daemon-reload
+echo "Enabling Fcn server daemon service."
+if [[ -f "/lib/systemd/system/fcn.service" ]]; then
+    systemctl enable fcn.service
+fi

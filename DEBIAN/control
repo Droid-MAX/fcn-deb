@@ -1,0 +1,8 @@
+Package: fcn
+Version: 3.9
+Depends: systemd, uml-utilities
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: boywhp <https://github.com/boywhp/fcn>
+Description: A private network access tool based on peer-to-peer VPN networking.

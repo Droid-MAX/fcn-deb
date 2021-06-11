@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Shutting down Fcn server daemon service."
+if [[ -f "/lib/systemd/system/fcn.service" ]] || [[ -f "/etc/systemd/system/fcn.service" ]]; then
+    systemctl stop fcn
+    systemctl disable fcn.service
+fi
